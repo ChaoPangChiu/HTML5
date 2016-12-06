@@ -1,0 +1,55 @@
+﻿  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  
+	  <script type="text/javascript" language="javascript">
+ 
+        function videopanel(id) {
+            str = '<iframe width="100%" height="350" src="http://www.youtube.com/embed/' + id + '" frameborder="0" allowfullscreen></iframe>';
+            return str;
+        }
+ 
+		function videochange(id) {
+			document.getElementById("player").innerHTML = videopanel(id);	
+		}
+
+      </script>
+	  
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  
+	        <div data-role="page" id="page">
+ 
+			<div data-role="content" style="margin:0px 0px 0px 0px; padding:10px 2% 400px 2%; width:96%; height:900px; background-color:#000000;">
+			
+			<div id="player">
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/hTWKbfoikeg" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+            <br /><br />
+			
+			<div class="collection">
+                  <a href='javascript:videochange("hTWKbfoikeg")' class="collection-item">Nirvana - Smells Like Teen Spirit</a>
+                  <a href='javascript:videochange("NCtzkaL2t_Y")' class="collection-item">The Beatles - Don't Let Me Down</a>
+				  <a href='javascript:videochange("CD-E-LDc384")' class="collection-item">Metallica - Enter Sandman [Official Music Video]</a>
+                  <a href='javascript:videochange("o1tj2zJ2Wvg")' class="collection-item">Guns N' Roses - Welcome To The Jungle</a>
+                  <a href='javascript:videochange("5NPBIwQyPWE")' class="collection-item">Avril Lavigne - Complicated (Official Video)</a>
+				  <a href='javascript:videochange("w8KQmps-Sog")' class="collection-item">Muse - Uprising [Official Video]</a>
+			</div>
+ 
+			</div>
+ 
+			</div>
+    </body>
+  </html>
